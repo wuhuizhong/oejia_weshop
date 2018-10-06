@@ -21,7 +21,7 @@ class ProductTemplate(models.Model):
 
 
     def get_main_image(self):
-        base_url='https://wx.oejia.net'#self.env['ir.config_parameter'].sudo().get_param('web.base.url')
+        base_url='https://erp.chateaupierre.cn'#self.env['ir.config_parameter'].sudo().get_param('web.base.url')
         return '%s/web/image/product.template/%s/image/300x300'%(base_url, self.id)
 
     def get_images(self):
